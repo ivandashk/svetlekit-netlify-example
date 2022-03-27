@@ -28,7 +28,7 @@ const manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png", "robots.txt", "svelte-welcome.png", "svelte-welcome.webp"]),
   mimeTypes: { ".png": "image/png", ".txt": "text/plain", ".webp": "image/webp" },
   _: {
-    entry: { "file": "start-c712b68f.js", "js": ["start-c712b68f.js", "chunks/vendor-ee294e9e.js", "chunks/singletons-d1fb5791.js"], "css": [] },
+    entry: { "file": "start-822370b4.js", "js": ["start-822370b4.js", "chunks/vendor-ee294e9e.js", "chunks/singletons-d1fb5791.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => __toESM(require("./nodes/0.js"))),
       () => Promise.resolve().then(() => __toESM(require("./nodes/1.js"))),
@@ -39,10 +39,9 @@ const manifest = {
     routes: [
       {
         type: "page",
-        id: "",
+        key: "",
         pattern: /^\/$/,
-        names: [],
-        types: [],
+        params: null,
         path: "/",
         shadow: null,
         a: [0, 2],
@@ -50,10 +49,9 @@ const manifest = {
       },
       {
         type: "page",
-        id: "about",
+        key: "about",
         pattern: /^\/about\/?$/,
-        names: [],
-        types: [],
+        params: null,
         path: "/about",
         shadow: null,
         a: [0, 3],
@@ -61,18 +59,14 @@ const manifest = {
       },
       {
         type: "page",
-        id: "todos",
+        key: "todos",
         pattern: /^\/todos\/?$/,
-        names: [],
-        types: [],
+        params: null,
         path: "/todos",
         shadow: () => Promise.resolve().then(() => __toESM(require("./entries/endpoints/todos/index.ts.js"))),
         a: [0, 4],
         b: [1]
       }
-    ],
-    matchers: async () => {
-      return {};
-    }
+    ]
   }
 };

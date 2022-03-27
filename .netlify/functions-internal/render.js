@@ -5,7 +5,7 @@ exports.handler = init({
 	assets: new Set(["favicon.png","robots.txt","svelte-welcome.png","svelte-welcome.webp"]),
 	mimeTypes: {".png":"image/png",".txt":"text/plain",".webp":"image/webp"},
 	_: {
-		entry: {"file":"start-c712b68f.js","js":["start-c712b68f.js","chunks/vendor-ee294e9e.js","chunks/singletons-d1fb5791.js"],"css":[]},
+		entry: {"file":"start-822370b4.js","js":["start-822370b4.js","chunks/vendor-ee294e9e.js","chunks/singletons-d1fb5791.js"],"css":[]},
 		nodes: [
 			() => Promise.resolve().then(() => require('../server/nodes/0.js')),
 			() => Promise.resolve().then(() => require('../server/nodes/1.js')),
@@ -14,19 +14,14 @@ exports.handler = init({
 		routes: [
 			{
 				type: 'page',
-				id: "todos",
+				key: "todos",
 				pattern: /^\/todos\/?$/,
-				names: [],
-				types: [],
+				params: null,
 				path: "/todos",
 				shadow: () => Promise.resolve().then(() => require('../server/entries/endpoints/todos/index.ts.js')),
 				a: [0,2],
 				b: [1]
 			}
-		],
-		matchers: async () => {
-			
-			return {  };
-		}
+		]
 	}
 });
