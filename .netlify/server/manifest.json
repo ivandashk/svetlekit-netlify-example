@@ -10,11 +10,6 @@
       "src/hooks.ts"
     ]
   },
-  "src/routes/my-page/index.ts": {
-    "file": "entries/endpoints/my-page/index.ts.js",
-    "src": "src/routes/my-page/index.ts",
-    "isEntry": true
-  },
   "src/routes/todos/index.ts": {
     "file": "entries/endpoints/todos/index.ts.js",
     "src": "src/routes/todos/index.ts",
@@ -58,14 +53,6 @@
     ],
     "css": [
       "assets/entries/pages/index.svelte-10d6e767.css"
-    ]
-  },
-  "src/routes/my-page/index.svelte": {
-    "file": "entries/pages/my-page/index.svelte.js",
-    "src": "src/routes/my-page/index.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-ee9fdf1a.js"
     ]
   },
   "src/routes/about.svelte": {

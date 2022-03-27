@@ -28,14 +28,13 @@ const manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png", "robots.txt", "svelte-welcome.png", "svelte-welcome.webp"]),
   mimeTypes: { ".png": "image/png", ".txt": "text/plain", ".webp": "image/webp" },
   _: {
-    entry: { "file": "start-f7e0f529.js", "js": ["start-f7e0f529.js", "chunks/vendor-ee294e9e.js", "chunks/singletons-d1fb5791.js"], "css": [] },
+    entry: { "file": "start-c712b68f.js", "js": ["start-c712b68f.js", "chunks/vendor-ee294e9e.js", "chunks/singletons-d1fb5791.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => __toESM(require("./nodes/0.js"))),
       () => Promise.resolve().then(() => __toESM(require("./nodes/1.js"))),
       () => Promise.resolve().then(() => __toESM(require("./nodes/2.js"))),
       () => Promise.resolve().then(() => __toESM(require("./nodes/3.js"))),
-      () => Promise.resolve().then(() => __toESM(require("./nodes/4.js"))),
-      () => Promise.resolve().then(() => __toESM(require("./nodes/5.js")))
+      () => Promise.resolve().then(() => __toESM(require("./nodes/4.js")))
     ],
     routes: [
       {
@@ -51,24 +50,13 @@ const manifest = {
       },
       {
         type: "page",
-        id: "my-page",
-        pattern: /^\/my-page\/?$/,
-        names: [],
-        types: [],
-        path: "/my-page",
-        shadow: () => Promise.resolve().then(() => __toESM(require("./entries/endpoints/my-page/index.ts.js"))),
-        a: [0, 3],
-        b: [1]
-      },
-      {
-        type: "page",
         id: "about",
         pattern: /^\/about\/?$/,
         names: [],
         types: [],
         path: "/about",
         shadow: null,
-        a: [0, 4],
+        a: [0, 3],
         b: [1]
       },
       {
@@ -79,7 +67,7 @@ const manifest = {
         types: [],
         path: "/todos",
         shadow: () => Promise.resolve().then(() => __toESM(require("./entries/endpoints/todos/index.ts.js"))),
-        a: [0, 5],
+        a: [0, 4],
         b: [1]
       }
     ],
